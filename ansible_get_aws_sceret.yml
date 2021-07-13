@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  vars:
+    password: "{{ lookup('aws_secret', 'dev/App/ansiblepasswordsecret', region='us-east-1') }}"
+  tasks:
+    - name: lookup secret manager
+      debug:
+        msg: "{{ password  }}"
+      no_log: true
