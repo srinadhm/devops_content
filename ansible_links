@@ -1,1 +1,4 @@
 https://docs.ansible.com/ansible/2.9_ja/plugins/lookup/aws_secret.html
+https://serverfault.com/questions/681832/how-can-i-stop-ansible-from-writing-passwords-to-the-logfiles
+https://docs.ansible.com/ansible/2.9/plugins/lookup/hashi_vault.html
+https://stackoverflow.com/questions/56313519/using-aws-secret-in-ansible
