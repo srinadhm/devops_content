@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  tasks:
+    - name: create ec2 instance
+      ec2:
+        key_name: devopsaws
+        instance_type: t2.micro
+        image: ami-09e67e426f25ce0d7
+        wait: yes
+        group: default
+        count: 2
+        vpc_subnet_id: subnet-ac7774e1
+        assign_public_ip: yes
+        region: us-east-1
