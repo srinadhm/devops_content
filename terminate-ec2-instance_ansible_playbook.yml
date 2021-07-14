@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  vars:
+    region: us-east-1
+    instance_ids:
+      - 'i-0b2bfdffd16547ae6'
+      - 'i-073640e23b52b8e30'
+  tasks:
+    - name: terminate ec2 instance
+      ec2:
+        state: 'absent'
+        instance_ids: '{{ instance_ids }}'
+        region: '{{ region }}'
