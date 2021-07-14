@@ -20,3 +20,9 @@ https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/
 https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
 https://stackoverflow.com/questions/55191980/remove-node-role-kubernetes-io-masternoschedule-taint
 https://stackoverflow.com/questions/38344896/kubernetes-how-to-scale-my-pods
+https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#client
+https://docs.ansible.com/ansible/latest/collections/community/aws/ec2_instance_module.html
+https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_module.html
+https://eksctl.io/usage/creating-and-managing-clusters/
+https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
