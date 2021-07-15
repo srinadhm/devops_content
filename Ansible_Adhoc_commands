@@ -14,6 +14,7 @@ pip install lxml  ( requires to download jar from maven repository
 pip install boto  ( requires to create ec2 instances from python 
 pip install boto3 ( requires to start or stop or terminate instances using lambda function)
 #download jar from maven repository using maven-artifact module which requires to install lxml pip module as pre requisite 
+https://docs.ansible.com/ansible/2.5/modules/maven_artifact_module.html
 [root@ip-172-31-15-207 ~]# ansible -m maven_artifact -a 'group_id=org.postgresql artifact_id=postgresql version=42.2.22 dest=/opt repository_url=https://repo1.maven.org/maven2' localhost
 localhost 
     | CHANGED => {
