@@ -1,0 +1,35 @@
+#check the working nodes connection or localhost connection using ping module
+ansible -m ping <group_name> or 
+ansible -m ping localhost
+ansible -m ping remotenodes
+#download url or jar or software from website or maven repository or maven org using get_url module
+ansible -m get_url -a 'url=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.2.22/postgresql-42.2.22.jar  dest=/opt mode=0755' localhost
+#remove file or jar or folder using file module
+ansible -m file -a 'path=/opt/postgresql-42.2.22.jar state=absent' localhost
+ansible -m file -a 'path=/opt/demo state=absent' localhost
+#Ansible used python 
+#Any module if it has any requirements we need to install using pip ( python ) 
+yum install python2-pip -y ( first install pip using python ) 
+pip install lxml  ( requires to download jar from maven repository 
+pip install boto  ( requires to create ec2 instances from python 
+pip install boto3 ( requires to start or stop or terminate instances using lambda function)
+#download jar from maven repository using maven-artifact module which requires to install lxml pip module as pre requisite 
+[root@ip-172-31-15-207 ~]# ansible -m maven_artifact -a 'group_id=org.postgresql artifact_id=postgresql version=42.2.22 dest=/opt repository_url=https://repo1.maven.org/maven2' localhost
+localhost | CHANGED => {
+    "artifact_id": "postgresql",
+    "changed": true,
+    "classifier": "",
+    "dest": "/opt/postgresql-42.2.22.jar",
+    "extension": "jar",
+    "gid": 0,
+    "group": "root",
+    "group_id": "org.postgresql",
+    "mode": "0600",
+    "owner": "root",
+    "repository_url": "https://repo1.maven.org/maven2",
+    "size": 1005173,
+    "state": "file",
+    "uid": 0,
+    "version": "42.2.22"
+}
+
