@@ -1,0 +1,10 @@
+https://www.terraform.io/downloads.html
+https://www.terraform.io/docs/language/resources/provisioners/local-exec.html
+https://www.terraform.io/docs/language/resources/provisioners/remote-exec.html
+https://www.terraform.io/docs/cli/commands/destroy.html
+https://github.com/hashicorp/terraform/issues/12917
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
+https://www.bogotobogo.com/DevOps/Terraform/Terraform-creating-multiple-instances-count-list-type.php
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
