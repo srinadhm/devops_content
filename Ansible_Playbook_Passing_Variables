@@ -1,0 +1,23 @@
+[root@ip-172-31-23-142 ansible-playbook]# cat install-java-8-redhat-ubuntu.yml
+
+---
+- hosts: remotenodes
+  tasks:
+    - name: install java on redhat
+      yum:
+        name: "{{ redhatdockerpkgname }}"
+        state: present
+      when: ansible_distribution == "RedHat" and ansible_distribution_version == "8.4"
+    - name: Update APT package manager repositories cache
+      apt:
+        update_cache: yes
+      when: ansible_distribution == "Ubuntu"
+    - name: Install OpenJDK Java
+      apt:
+        name: "{{ ubuntugitpkgname }}"
+        state: present
+      when: ansible_distribution == "Ubuntu"
+
+
+
+ansible-playbook install-java-8-redhat-ubuntu.yml --extra-vars "redhatdockerpkgname=docker ubuntugitpkgname=git"
