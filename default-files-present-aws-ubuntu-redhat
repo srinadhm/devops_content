@@ -1,0 +1,17 @@
+redhat machine files present in root folder 
+[root@ansible-node1 ~]# ll
+total 16
+-rw-------. 1 root root 6953 May  4 17:33 anaconda-ks.cfg
+-rw-------. 1 root root 6699 May  4 17:33 original-ks.cfg
+ubuntu machine files present in root folder 
+root@ansible-node2:~# ll
+total 36
+drwx------  5 root root 4096 Jul 15 09:48 ./
+drwxr-xr-x 19 root root 4096 Jul 15 09:38 ../
+-rw-------  1 root root    8 Jul 15 09:46 .bash_history
+-rw-r--r--  1 root root 3106 Dec  5  2019 .bashrc
+drwx------  2 root root 4096 Jul 15 09:46 .cache/
+-rw-r--r--  1 root root  161 Dec  5  2019 .profile
+drwx------  2 root root 4096 Jul 15 09:42 .ssh/
+-rw-------  1 root root  869 Jul 15 09:42 .viminfo
+drwxr-xr-x  4 root root 4096 Jul 15 09:38 snap/
