@@ -1,0 +1,7 @@
+[root@ip-172-31-23-142 ansible-playbook]# cat print_redhat_facts.yml
+---
+- hosts: remotenodes
+  tasks:
+    - name: Print all available facts
+      ansible.builtin.debug:
+        var: ansible_facts
