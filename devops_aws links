@@ -26,3 +26,7 @@ https://docs.ansible.com/ansible/latest/collections/community/aws/ec2_instance_m
 https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_module.html
 https://eksctl.io/usage/creating-and-managing-clusters/
 https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
+https://www.redhat.com/sysadmin/extra-variables-ansible-playbook
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html
+https://ansible-tips-and-tricks.readthedocs.io/en/latest/os-dependent-tasks/variables/
+https://raymii.org/s/tutorials/Ansible_-_Only_if_on_specific_distribution_or_distribution_version.html
