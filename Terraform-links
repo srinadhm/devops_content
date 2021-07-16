@@ -8,3 +8,11 @@ https://www.bogotobogo.com/DevOps/Terraform/Terraform-creating-multiple-instance
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+https://registry.terraform.io/providers/hashicorp/archive/latest/docs/data-sources/archive_file
+https://www.terraform.io/docs/language/functions/element.html
+https://www.terraform.io/docs/language/functions/index.html
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+https://www.terraform.io/docs/language/resources/provisioners/remote-exec.html
+https://www.terraform.io/docs/language/resources/provisioners/local-exec.html
+https://dev.to/sagarjadhv23/executing-shell-script-in-terraform-via-null-resource-872
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function
