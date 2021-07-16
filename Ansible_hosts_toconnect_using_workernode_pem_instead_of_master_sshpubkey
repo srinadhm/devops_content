@@ -1,0 +1,28 @@
+[AnsibleHosts]
+172.31.63.232
+[AnsibleHosts:vars]
+ansible_ssh_user=ec2-user
+ansible_ssh_private_key_file=/home/ec2-user/devopsaws.pem ( worker node pem file)
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+
+
+[AnsibleHosts12]
+172.31.61.251
+[AnsibleHosts12:vars]
+ansible_ssh_user=ec2-user
+ansible_ssh_private_key_file=/home/ec2-user/ansible.pem ( worker node pem file)
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+#################################################################
+
+[AnsibleHosts]
+ansible_ssh_user=ec2-user
+ansible_ssh_private_key_file=/home/ec2-user/devopsaws.pem
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+
+
+[AnsibleHosts12]
+172.31.61.251
+[AnsibleHosts12]
+ansible_ssh_user=ec2-user
+ansible_ssh_private_key_file=/home/ec2-user/ansible.pem
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
