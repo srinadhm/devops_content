@@ -1,0 +1,8 @@
+-
+  hosts: nodes
+  tasks:
+    - name: Install Jenkins
+      get_url:
+        url: http://pkg.jenkins.io/redhat/jenkins.repo
+        dest: /etc/yum.repos.d
+        mode: '0777'
