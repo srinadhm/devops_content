@@ -1,0 +1,14 @@
+---
+- hosts: nodes
+  tasks:
+    - name: Install java
+      yum:
+        name: java-1.8.0-openjdk-devel
+        state: present
+        
+ Ansible commands 
+ ################
+command to check the syntax 
+ansible-playbook --syntax-check install_java.yml
+command to run the playbook
+ansible-playbook install_java.yml
