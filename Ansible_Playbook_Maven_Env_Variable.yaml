@@ -1,0 +1,23 @@
+- hosts: nodes
+  tasks:
+    - name: Install Maven
+      get_url:
+        url: https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+        dest: /opt
+        mode: '0755'
+    - name: extract maven
+      unarchive:
+        src: /opt/apache-maven-3.8.1-bin.tar.gz
+        dest: /opt
+        remote_src: True
+    - name: remove tar file
+      file:
+        path: /opt/apache-maven-3.8.1-bin.tar.gz
+        state: absent
+    - name: rename maven
+      command: mv /opt/apache-maven-3.8.1 /opt/maven
+    - name: adding the path in the bash rc files
+      lineinfile: dest=/root/.bashrc line='export PATH=$PATH:/opt/maven/bin' insertafter='EOF' regexp='export PATH=\$PATH:/opt/maven/bin' state=present
+    - name: Source the bash rc file
+      shell: source /root/.bashrc
+      remote_user: root
