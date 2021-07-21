@@ -1,0 +1,10 @@
+2.Download maven using ansible
+wget https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+we have to use get_url module to download tar.gz format from maven.org
+- hosts: nodes
+  tasks:
+    - name: Install Maven
+      get_url:
+        url: https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+        dest: /opt
+        mode: '0755'
